@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+  font-size: 100%;
+  --veryDarkBlue: hsl(233, 47%, 7%);
+  --darkBlue: hsl(244, 38%, 16%);
+  --softViolet: hsl(277, 64%, 61%);
+  --greyWhite: hsla(0, 0%, 100%, 0.6);
+  --lightGreyWhite: hsla(0, 0%, 100%, 0.75);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: var(--veryDarkBlue);
+  font-family: "Lexend Deca", sans-serif;
+  padding-top: 6em;
+  margin-bottom: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
+  padding-left: 5em;
+        padding-right: 5em;
+  
+}
+
+.imgContainer__img {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  border-radius: 0.5em 0.5em 0 0;
+  mix-blend-mode: multiply;
+  opacity: .8;
+}
+
+.imgContainer {
+    background-color: var(--softViolet);
+    border-radius: .5em .5em 0 0;
+
+}
+
+.main {
+  background-color: var(--darkBlue);
+  color: #fff;
+  text-align: center;
+  padding: 3em;
+  border-radius: 0 0 .5em .5em;
+}
+
+.main__headerSpan {
+  color: var(--softViolet);
+}
+
+.main__header {
+  margin-bottom: 1em;
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+}
+
+.main__p {
+  font-weight: 100;
+  color: var(--lightGreyWhite);
+  margin-bottom: 2.5em;
+}
+
+.main__info__p {
+    color: var(--greyWhite);
+    text-transform: uppercase;
+    font-size: .875rem;
+    margin-bottom: 2em;
+}
+
+.main__info__span {
+    font-size: 1.5rem;
+    color: #fff;
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-transform: initial;
+    padding-bottom: .3em;
+}
+
+@media (min-width: 994px) {
+  body {
+    height: 100vh;
+  }  
+  
+  main {
+        display: flex;
+        flex-direction: row-reverse;
+        min-width: 100vh;
+        
+    }
+
+    .wrapper {
+        max-width: 1280px;
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    .main {
+        border-radius: .5em 0 0 .5em;
+        text-align: left;
+        flex: 1;
+    }
+
+    .imgContainer {
+        flex: 1;
+        border-radius: 0 .5em .5em 0;
+
+    }
+
+    .imgContainer__img {
+        min-height: 100%;
+        border-radius: 0 .5em .5em 0;
+    }
+
+
+
+    .main__info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6em;
+
+    }
+}
