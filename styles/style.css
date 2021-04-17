@@ -116,10 +116,13 @@ body {
         border-radius: .5em 0 0 .5em;
         text-align: left;
         flex: 1;
+        padding-left: 6em;
+        padding-top: 5em;
+        padding-right: 8em;
     }
 
     .imgContainer {
-        flex: 1;
+        flex: 1.1;
         border-radius: 0 .5em .5em 0;
 
     }
